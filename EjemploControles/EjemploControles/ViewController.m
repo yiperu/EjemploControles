@@ -29,10 +29,17 @@
 
 
 - (IBAction)tocarSwitch:(UISwitch *)sender {
-
+    if (sender.on) {
+        self.slider.enabled = YES;
+        self.botonMinMax.enabled = YES;
+    } else {
+        self.slider.enabled = NO;
+        self.botonMinMax.enabled = NO;
+    }
 }
 
 - (IBAction)slidearSlid:(UISlider *)sender {
+    self.view.backgroundColor = [UIColor colorWithRed:sender.value green:sender.value blue:sender.value alpha:1];
 
 }
 
