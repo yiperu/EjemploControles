@@ -10,4 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UISlider * slider;
+@property (nonatomic, strong) IBOutlet UIButton * botonMinMax;
+
+- (IBAction)tocarSwitch:(UISwitch *)sender;
+- (IBAction)slidearSlid:(UISlider *)sender;
+- (IBAction)precionarBoton:(UIButton *)sender;
+
+
+
 @end

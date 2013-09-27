@@ -18,12 +18,26 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)tocarSwitch:(UISwitch *)sender {
+
+}
+
+- (IBAction)slidearSlid:(UISlider *)sender {
+
+}
+
+- (IBAction)precionarBoton:(UIButton *)sender {
+
 }
 
 @end
