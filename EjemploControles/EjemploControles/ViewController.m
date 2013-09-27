@@ -13,6 +13,8 @@
 @end
 
 @implementation ViewController
+@synthesize slider;
+@synthesize botonMinMax;
 
 - (void)viewDidLoad
 {
@@ -44,7 +46,15 @@
 }
 
 - (IBAction)precionarBoton:(UIButton *)sender {
+    if ([sender.titleLabel.text isEqualToString:@"Establecer Slider Maximo"]) {
+        [sender setTitle:@"Establecer Slider Minimo" forState:UIControlStateNormal];
+        self.slider.value = 1;
+    } else {
+        [sender setTitle:@"Establecer Slider Maximo" forState:UIControlStateNormal];
+        self.slider.value = 0;
+    }
 
+    [self slidearSlid:self.slider];
 }
 
 @end
